@@ -1348,7 +1348,8 @@ function SeccionContactame() {
         setAsunto("");
         setMensaje("");
       }
-    } catch (errors) {
+    } catch (error) {
+      console.log(error);
       setResponseMessage("Error al enviar el mensaje.");
       setIsError(true);
     } finally {

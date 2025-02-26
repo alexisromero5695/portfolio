@@ -240,7 +240,7 @@ function SectionMain() {
             soy Alexis
           </span>
         </h1>
-        <span className=" font-semibold inline-flex animate-background-shine bg-[linear-gradient(110deg,#64748b,45%,#0f172a,55%,#64748b)] dark:bg-[linear-gradient(110deg,#b6eaff,45%,#065074,55%,#b6eaff)] bg-[length:250%_100%] bg-clip-text text-xl text-transparent">
+        <span className=" font-semibold inline-flext text-xl text-primary-950/80 dark:text-primary-200/90">
           Desarrollador Fullstack
         </span>
 

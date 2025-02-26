@@ -8,7 +8,7 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-
+import Image from "next/image";
 
 function Header() {
   const { theme, setTheme, resolvedTheme } = useTheme();
@@ -225,13 +225,15 @@ function SectionMain() {
   return (<section className="relative mx-auto container px-2 pt-44 lg:h-screen overflow-hidden lg:pt-0 lg:w-[740px] lg:flex lg:flex-col lg:justify-center">
     <div className="text-left lg:flex lg:flex-row-reverse lg:justify-center lg:items-center md:gap-x-4">
       <div className="Hero-image flex justify-center mb-6 w-16 lg:w-1/5 ">
-        <img
+        <Image
           src="https://media.licdn.com/dms/image/v2/D4E03AQEOB2kK24g-0A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721683794026?e=1746057600&v=beta&t=bcUaHiiNnCAWa6sW-CXqC63XKLzxEjv6zrDjaj8vUoQ"
           alt="Alexis Romero Dev"
           width={200}
           height={200}
           className="drop-shadow-sm w-[130px] rounded-full  object-contain shadow-lg dark:shadow-dark-900"
           loading="lazy"
+          width={500} 
+  height={300} 
         />
       </div>
       <header className="lg:w-4/5">
@@ -531,11 +533,13 @@ function SeccionProyectos() {
          
         >
           <figure className="w-full rounded-3xl overflow-hidden">
-            <img
+            <Image
               className="w-full h-full min-h-[232px] object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
               src="/images/portafolio.jpg"
               alt="Portfolio Alexis Romero"
               loading="lazy"
+              width={500} 
+  height={300} 
             />
           </figure>
           <div className="p-6">
@@ -579,11 +583,13 @@ function SeccionProyectos() {
         >
           <a href="https://topmedicalsolution.com" target="_blank" rel="noopener noreferrer">
             <figure className="w-full rounded-3xl overflow-hidden">
-              <img
+              <Image
                 className="w-full h-full min-h-[232px] object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
                 src="/images/topmedicalsolution.jpg"
                 alt="Momentum Generative App"
                 loading="lazy"
+                width={500} 
+  height={300} 
               />
             </figure>
           </a>
@@ -624,11 +630,13 @@ function SeccionProyectos() {
         >
           <a href="https://www.okarepuestos.cl/#/" target="_blank" rel="noopener noreferrer">
             <figure className="w-full rounded-3xl overflow-hidden">
-              <img
+              <Image
                 className="w-full h-full min-h-[232px] object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
                 src="/images/okarepuestos.jpg"
                 alt="Momentum Generative App"
                 loading="lazy"
+                width={500} 
+  height={300} 
               />
             </figure>
           </a>
@@ -669,11 +677,13 @@ function SeccionProyectos() {
         >
           <a href="https://crmveterinario.com/index.html" target="_blank" rel="noopener noreferrer">
             <figure className="w-full rounded-3xl overflow-hidden">
-              <img
+              <Image
                 className="w-full h-full min-h-[232px] object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
                 src="/images/crmveterinario.jpg"
                 alt="Momentum Generative App"
                 loading="lazy"
+                width={500} 
+  height={300} 
               />
             </figure>
           </a>
@@ -712,11 +722,13 @@ function SeccionProyectos() {
           className="relative bg-dark-100 shadow dark:shadow-primary-50/10 dark:bg-dark-900 w-full rounded-3xl min-h-[340px] md:col-span-2 p-1 group overflow-hidden"
         >
           <figure className="w-full rounded-3xl overflow-hidden">
-            <img
+            <Image
               className="w-full h-full min-h-[232px] object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
               src="/images/buinzoo.jpg"
               alt="Momentum Generative App"
               loading="lazy"
+              width={500} 
+  height={300} 
             />
           </figure>
           <div className="p-6">
@@ -766,11 +778,13 @@ function SeccionSobreMi() {
       </h2>
       <div className="pt-12 md:pt-2">
         <div className="w-full">
-          <img
+          <Image
             src="https://media.licdn.com/dms/image/v2/D4E03AQEOB2kK24g-0A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721683794026?e=1746057600&v=beta&t=bcUaHiiNnCAWa6sW-CXqC63XKLzxEjv6zrDjaj8vUoQ"
             alt="Programador mirando a la cámara con escritorio atrás"
             className=" object-cover rounded-full size-72 shadow-lg shadow-dark-900/20 dark:shadow-dark-50/10  mx-auto"
             loading="lazy"
+            width={500} 
+  height={300} 
           />
           <p className="mt-8 text-dark-700 dark:text-dark-200 md:w-11/12 text-pretty text-base">
             Hola 👋, soy Alexis Romero,{" "}
@@ -813,8 +827,10 @@ function SeccionLogros() {
 
       <article key={i} className="mt-4 flex flex-col md:flex-row gap-x-6 px-4 py-6 rounded-xl shadow-lg items-center hover:scale-[1.02] transition-transform dark:shadow-dark-900">
         <picture className="w-full md:w-1/4 rounded-lg overflow-hidden shadow-md ">
-          <img
+          <Image
             loading="lazy"
+            width={500} 
+  height={300} 
             src={image.src}
             alt={image.alt}
             className="w-full h-40 object-cover cursor-pointer"

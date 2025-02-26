@@ -19,7 +19,6 @@ function Header() {
   }, []);
 
   if (!mounted) return null; // Evita errores de renderizado en SSR
-
   return (<header className="backdrop-blur-md bg-dark-200/30 dark:bg-dark-900/30 fixed w-full z-20 top-0 left-0">
     <nav className="container px-2 lg:max-w-[1114px] flex flex-wrap items-center justify-between mx-auto py-4 ">
       <Link

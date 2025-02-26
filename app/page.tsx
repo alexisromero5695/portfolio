@@ -1324,7 +1324,8 @@ function SeccionContactame() {
   const [responseMessage, setResponseMessage] = useState("");
   const [isError, setIsError] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+
     e.preventDefault();
     setLoading(true);
     setResponseMessage("");

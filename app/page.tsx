@@ -509,7 +509,7 @@ function SeccionProyectos() {
           <figure className="w-full rounded-3xl overflow-hidden">
             <Image
               className="w-full h-full min-h-[232px] object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
-              src="/images/portafolio.jpg"
+              src="/images/portafolio.webp"
               alt="Portfolio Alexis Romero"
               loading="lazy"
               width={500} 
@@ -559,7 +559,7 @@ function SeccionProyectos() {
             <figure className="w-full rounded-3xl overflow-hidden">
               <Image
                 className="w-full h-full min-h-[232px] object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
-                src="/images/topmedicalsolution.jpg"
+                src="/images/topmedicalsolution.webp"
                 alt="Momentum Generative App"
                 loading="lazy"
                 width={500} 
@@ -606,7 +606,7 @@ function SeccionProyectos() {
             <figure className="w-full rounded-3xl overflow-hidden">
               <Image
                 className="w-full h-full min-h-[232px] object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
-                src="/images/okarepuestos.jpg"
+                src="/images/okarepuestos.webp"
                 alt="Momentum Generative App"
                 loading="lazy"
                 width={500} 
@@ -653,7 +653,7 @@ function SeccionProyectos() {
             <figure className="w-full rounded-3xl overflow-hidden">
               <Image
                 className="w-full h-full min-h-[232px] object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
-                src="/images/crmveterinario.jpg"
+                src="/images/crmveterinario.webp"
                 alt="Momentum Generative App"
                 loading="lazy"
                 width={500} 
@@ -698,7 +698,7 @@ function SeccionProyectos() {
           <figure className="w-full rounded-3xl overflow-hidden">
             <Image
               className="w-full h-full min-h-[232px] object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
-              src="/images/buinzoo.jpg"
+              src="/images/buinzoo.webp"
               alt="Momentum Generative App"
               loading="lazy"
               width={500} 
@@ -784,12 +784,12 @@ function SeccionLogros() {
   const [index, setIndex] = useState(0); // Índice de la imagen seleccionada
 
   const images = [
-    { src: "/images/certificado react uni.jpg", alt: "Imagen certificado React", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Aplicaciones Frontend con React", fecha: "Expedido: jun. 2024" },
-    { src: "/images/certificado java nivel ii uni.jpg", alt: "Imagen certificado Java - Desarrollo de Aplicaciones de Escritorio ", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Java - Desarrollo de Aplicaciones de Escritorio", fecha: "Expedido: oct. 2022" },
-    { src: "/images/certificado java nivel i uni.jpg", alt: "Imagen certificado Java - Programación", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Java - Programación", fecha: "Expedido: sept. 2022" },
-    { src: "/images/certificado php nivel iii uni.jpg", alt: "Imagen certificado PHP Nivel III - Avanzado", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "PHP Nivel III - Avanzado", fecha: "Expedido: dic. 2018" },
-    { src: "/images/certificado php nivel ii uni.jpg", alt: "Imagen certificado PHP Nivel II - DAO - POO", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "PHP Nivel II - DAO - POO", fecha: "Expedido: nov. 2018" },
-    { src: "/images/certificado php nivel i uni.jpg", alt: "Imagen certificado PHP Nivel I - Programación Web", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "PHP Nivel I - Programación Web", fecha: "Expedido: sept. 2018" },
+    { src: "/images/certificado react uni.webp", alt: "Imagen certificado React", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Aplicaciones Frontend con React", fecha: "Expedido: jun. 2024" },
+    { src: "/images/certificado java nivel ii uni.webp", alt: "Imagen certificado Java - Desarrollo de Aplicaciones de Escritorio ", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Java - Desarrollo de Aplicaciones de Escritorio", fecha: "Expedido: oct. 2022" },
+    { src: "/images/certificado java nivel i uni.webp", alt: "Imagen certificado Java - Programación", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Java - Programación", fecha: "Expedido: sept. 2022" },
+    { src: "/images/certificado php nivel iii uni.webp", alt: "Imagen certificado PHP Nivel III - Avanzado", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "PHP Nivel III - Avanzado", fecha: "Expedido: dic. 2018" },
+    { src: "/images/certificado php nivel ii uni.webp", alt: "Imagen certificado PHP Nivel II - DAO - POO", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "PHP Nivel II - DAO - POO", fecha: "Expedido: nov. 2018" },
+    { src: "/images/certificado php nivel i uni.webp", alt: "Imagen certificado PHP Nivel I - Programación Web", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "PHP Nivel I - Programación Web", fecha: "Expedido: sept. 2018" },
   ];
 
   return (<section className="pt-24 container mx-auto px-2 lg:w-[740px]" id="logros">

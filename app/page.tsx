@@ -11,7 +11,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Image from "next/image";
 
 function Header() {
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const {  setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
@@ -1348,7 +1348,7 @@ function SeccionContactame() {
         setAsunto("");
         setMensaje("");
       }
-    } catch (error) {
+    } catch (errors) {
       setResponseMessage("Error al enviar el mensaje.");
       setIsError(true);
     } finally {

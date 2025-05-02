@@ -11,7 +11,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Image from "next/image";
 
 function Header() {
-  const {  setTheme, resolvedTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
@@ -225,12 +225,12 @@ function SectionMain() {
     <div className="text-left lg:flex lg:flex-row-reverse lg:justify-center lg:items-center md:gap-x-4">
       <div className="Hero-image flex justify-center mb-6 w-16 lg:w-1/5 ">
         <Image
-          src="https://media.licdn.com/dms/image/v2/D4E03AQEOB2kK24g-0A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721683794026?e=1746057600&v=beta&t=bcUaHiiNnCAWa6sW-CXqC63XKLzxEjv6zrDjaj8vUoQ"
-          alt="Alexis Romero Dev"         
+          src="/images/profile.jpg"
+          alt="Alexis Romero Dev"
           className="drop-shadow-sm w-[130px] rounded-full  object-contain shadow-lg dark:shadow-dark-900"
           loading="lazy"
-          width={200} 
-  height={200} 
+          width={200}
+          height={200}
         />
       </div>
       <header className="lg:w-4/5">
@@ -502,9 +502,63 @@ function SeccionProyectos() {
         se ha convertido en una oportunidad para innovar y mejorar.
       </p>
       <div className="grid md:grid-cols-4 gap-4 mt-6">
+
         <div
           className="relative bg-dark-100 shadow dark:shadow-primary-50/10 dark:bg-dark-900 w-full rounded-3xl min-h-[340px] md:col-span-2 p-1 group overflow-hidden"
-         
+        >
+          <a href="https://www.figma.com/design/UiijQkkQEJsuchUl0EuQd5/TRABAJO-FINAL-UX-UI?node-id=3195-301&t=hDMJB2rv5Yi9dOKB-0" target="_blank" rel="noopener noreferrer">
+            <figure className="w-full rounded-3xl overflow-hidden">
+              <Image
+                className="w-full h-full min-h-[232px] object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
+                src="/images/cover-proyecto-ux-ui-clinica-veterinaria.webp"
+                alt="Momentum Generative App"
+                loading="lazy"
+                width={500}
+                height={300}
+              />
+            </figure>
+          </a>
+          <div className="p-6">
+            <h1 className="font-bold text-lg text-primary-700 dark:text-primary-400">
+              UX/UI – Clínica Veterinaria
+            </h1>
+            <p className="line-clamp-10 mt-4 text-dark-700 dark:text-dark-200">
+              Proyecto final del curso de UX/UI enfocado en mejorar la experiencia de usuario en una clínica veterinaria. Incluye mapas de empatía, user journeys, user flows, wireframes en distintas fidelidades, mapa del sitio, style guide y diseño de componentes. Todo fue desarrollado en Figma, aplicando buenas prácticas de diseño centrado en el usuario.
+            </p>
+            <ul className="flex gap-1 flex-wrap text-sm mt-4">
+              <li className="rounded-full px-2 border-dark-200 dark:border-dark-800 bg-dark-300/60 dark:bg-primary-900/30 backdrop-blur-sm text-dark-700 dark:text-dark-200">
+                {" "}
+                Figma
+              </li>
+              <li className="rounded-full px-2 border-dark-200 dark:border-dark-800 bg-dark-300/60 dark:bg-primary-900/30 backdrop-blur-sm text-dark-700 dark:text-dark-200">
+                {" "}
+                UX Research
+              </li>
+              <li className="rounded-full px-2 border-dark-200 dark:border-dark-800 bg-dark-300/60 dark:bg-primary-900/30 backdrop-blur-sm text-dark-700 dark:text-dark-200">
+                {" "}
+                Wireframing
+              </li>
+              <li className="rounded-full px-2 border-dark-200 dark:border-dark-800 bg-dark-300/60 dark:bg-primary-900/30 backdrop-blur-sm text-dark-700 dark:text-dark-200">
+                {" "}
+                Prototipado
+              </li>
+              <li className="rounded-full px-2 border-dark-200 dark:border-dark-800 bg-dark-300/60 dark:bg-primary-900/30 backdrop-blur-sm text-dark-700 dark:text-dark-200">
+                {" "}
+                Componentes UI
+              </li>
+              <li className="rounded-full px-2 border-dark-200 dark:border-dark-800 bg-dark-300/60 dark:bg-primary-900/30 backdrop-blur-sm text-dark-700 dark:text-dark-200">
+                {" "}
+                Design System
+              </li>
+            </ul>
+          </div>
+          <span className="absolute top-4 left-4 backdrop-blur-md bg-dark-600/50 py-1 px-2 rounded-full z-10 text-sm font-semibold text-dark-100 ">
+            UX/UI Design
+          </span>
+        </div>
+
+        <div
+          className="relative bg-dark-100 shadow dark:shadow-primary-50/10 dark:bg-dark-900 w-full rounded-3xl min-h-[340px] md:col-span-2 p-1 group overflow-hidden"
         >
           <figure className="w-full rounded-3xl overflow-hidden">
             <Image
@@ -512,10 +566,12 @@ function SeccionProyectos() {
               src="/images/portafolio.webp"
               alt="Portfolio Alexis Romero"
               loading="lazy"
-              width={500} 
-  height={300} 
+              width={500}
+              height={300}
             />
           </figure>
+
+
           <div className="p-6">
             <h1 className="font-bold text-lg text-primary-700 dark:text-primary-400">
               Portfolio
@@ -562,8 +618,8 @@ function SeccionProyectos() {
                 src="/images/topmedicalsolution.webp"
                 alt="Momentum Generative App"
                 loading="lazy"
-                width={500} 
-  height={300} 
+                width={500}
+                height={300}
               />
             </figure>
           </a>
@@ -609,8 +665,8 @@ function SeccionProyectos() {
                 src="/images/okarepuestos.webp"
                 alt="Momentum Generative App"
                 loading="lazy"
-                width={500} 
-  height={300} 
+                width={500}
+                height={300}
               />
             </figure>
           </a>
@@ -653,11 +709,11 @@ function SeccionProyectos() {
             <figure className="w-full rounded-3xl overflow-hidden">
               <Image
                 className="w-full h-full min-h-[232px] object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
-                src="/images/crmveterinario.webp"
+                src="/images/sistema_crmveterinario.webp"
                 alt="Momentum Generative App"
                 loading="lazy"
-                width={500} 
-  height={300} 
+                width={500}
+                height={300}
               />
             </figure>
           </a>
@@ -701,8 +757,8 @@ function SeccionProyectos() {
               src="/images/buinzoo.webp"
               alt="Momentum Generative App"
               loading="lazy"
-              width={500} 
-  height={300} 
+              width={500}
+              height={300}
             />
           </figure>
           <div className="p-6">
@@ -753,12 +809,12 @@ function SeccionSobreMi() {
       <div className="pt-12 md:pt-2">
         <div className="w-full">
           <Image
-            src="https://media.licdn.com/dms/image/v2/D4E03AQEOB2kK24g-0A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721683794026?e=1746057600&v=beta&t=bcUaHiiNnCAWa6sW-CXqC63XKLzxEjv6zrDjaj8vUoQ"
+            src="/images/profile.jpg"
             alt="Programador mirando a la cámara con escritorio atrás"
             className=" object-cover rounded-full size-72 shadow-lg shadow-dark-900/20 dark:shadow-dark-50/10  mx-auto"
             loading="lazy"
-            width={500} 
-  height={300} 
+            width={500}
+            height={300}
           />
           <p className="mt-8 text-dark-700 dark:text-dark-200 md:w-11/12 text-pretty text-base">
             Hola 👋, soy Alexis Romero,{" "}
@@ -784,6 +840,7 @@ function SeccionLogros() {
   const [index, setIndex] = useState(0); // Índice de la imagen seleccionada
 
   const images = [
+    { src: "/images/certificado_scrum.webp", alt: "Imagen certificado SCRUM", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "SCRUM - GESTIÓN DE PROYECTOS ", fecha: "Expedido: abr. 2025" },
     { src: "/images/certificado react uni.webp", alt: "Imagen certificado React", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Aplicaciones Frontend con React", fecha: "Expedido: jun. 2024" },
     { src: "/images/certificado java nivel ii uni.webp", alt: "Imagen certificado Java - Desarrollo de Aplicaciones de Escritorio ", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Java - Desarrollo de Aplicaciones de Escritorio", fecha: "Expedido: oct. 2022" },
     { src: "/images/certificado java nivel i uni.webp", alt: "Imagen certificado Java - Programación", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Java - Programación", fecha: "Expedido: sept. 2022" },
@@ -803,8 +860,8 @@ function SeccionLogros() {
         <picture className="w-full md:w-1/4 rounded-lg overflow-hidden shadow-md ">
           <Image
             loading="lazy"
-            width={500} 
-  height={300} 
+            width={500}
+            height={300}
             src={image.src}
             alt={image.alt}
             className="w-full h-40 object-cover cursor-pointer"
@@ -1304,6 +1361,12 @@ function SeccionTecnologias() {
           </svg>
 
           <span className=" text-sm w-full text-center">Bootstrap</span>
+        </li>
+
+        <li className=" rounded-2xl  group flex flex-col fle justify-center items-center">
+          <svg className="size-12 mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="1em" height="1em"><path fill="#0acf83" d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0"></path><path fill="#a259ff" d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0"></path><path fill="#f24e1e" d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0"></path><path fill="#ff7262" d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0"></path><path fill="#1abcfe" d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5S76.6 43 88.5 43S110 52.6 110 64.5zm0 0"></path></svg>
+
+          <span className=" text-sm w-full text-center">Figma</span>
         </li>
       </ul>
     </article>

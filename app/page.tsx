@@ -557,6 +557,54 @@ function SeccionProyectos() {
           </span>
         </div>
 
+
+        <div
+          className="relative bg-dark-100 shadow dark:shadow-primary-50/10 dark:bg-dark-900 w-full rounded-3xl min-h-[340px] md:col-span-2 p-1 group overflow-hidden"
+        >
+          <a href="https://mytasklistmanager.netlify.app/auth/login" target="_blank" rel="noopener noreferrer">
+            <figure className="w-full rounded-3xl overflow-hidden">
+              <Image
+                className="w-full h-full min-h-[232px] object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
+                src="/images/mytasklistmanager.webp"
+                alt="Momentum Generative App"
+                loading="lazy"
+                width={500}
+                height={300}
+              />
+            </figure>
+          </a>
+          <div className="p-6">
+            <h1 className="font-bold text-lg text-primary-700 dark:text-primary-400">
+              My task list manager  (Bootcamp Socius)
+            </h1>
+            <p className="line-clamp-10 mt-4 text-dark-700 dark:text-dark-200">
+              Aplicación enfocada en la organización de tareas personales. Permite gestionar listas de tareas mediante funciones como creación, edición, marcado de completado y eliminación. Incluye autenticación de usuario y manejo seguro de sesiones, ofreciendo una experiencia fluida y centrada en la productividad.
+            </p>
+            <ul className="flex gap-1 flex-wrap text-sm mt-4">
+              <li className="rounded-full px-2 border-dark-200 dark:border-dark-800 bg-dark-300/60 dark:bg-primary-900/30 backdrop-blur-sm text-dark-700 dark:text-dark-200">
+                {" "}
+                Angular
+              </li>
+              <li className="rounded-full px-2 border-dark-200 dark:border-dark-800 bg-dark-300/60 dark:bg-primary-900/30 backdrop-blur-sm text-dark-700 dark:text-dark-200">
+                {" "}
+                Tailwind CSS
+              </li>
+              <li className="rounded-full px-2 border-dark-200 dark:border-dark-800 bg-dark-300/60 dark:bg-primary-900/30 backdrop-blur-sm text-dark-700 dark:text-dark-200">
+                {" "}
+                JWT Auth
+              </li>
+              <li className="rounded-full px-2 border-dark-200 dark:border-dark-800 bg-dark-300/60 dark:bg-primary-900/30 backdrop-blur-sm text-dark-700 dark:text-dark-200">
+                {" "}
+                REST API
+              </li>
+            </ul>
+          </div>
+          <span className="absolute top-4 left-4 backdrop-blur-md bg-dark-600/50 py-1 px-2 rounded-full z-10 text-sm font-semibold text-dark-100 ">
+            FullStack
+          </span>
+        </div>
+
+
         <div
           className="relative bg-dark-100 shadow dark:shadow-primary-50/10 dark:bg-dark-900 w-full rounded-3xl min-h-[340px] md:col-span-2 p-1 group overflow-hidden"
         >
@@ -821,7 +869,7 @@ function SeccionSobreMi() {
             <span className="font-bold text-primary-700 dark:text-primary-400">
               Ingeniero Informático,{" "}
             </span>
-            actualmente trabajando en el desarrollo de soluciones tecnológicas para clínicas veterinarias y comercio electrónico. Con más de 4 años de experiencia en el desarrollo de sitios web dinámicos y plataformas corporativas, he demostrado mi capacidad para adaptarme a diversas tecnologías y entregar productos de alta calidad.
+            actualmente trabajando en el desarrollo de soluciones tecnológicas para clínicas veterinarias y comercio electrónico. Con más de 5 años de experiencia en el desarrollo de sitios web dinámicos y plataformas corporativas, he demostrado mi capacidad para adaptarme a diversas tecnologías y entregar productos de alta calidad.
           </p>
 
           <p className="mt-8 text-dark-700 dark:text-dark-200 md:w-11/12 text-pretty text-base">
@@ -841,6 +889,7 @@ function SeccionLogros() {
 
   const images = [
     { src: "/images/certificado_scrum.webp", alt: "Imagen certificado SCRUM", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "SCRUM - GESTIÓN DE PROYECTOS ", fecha: "Expedido: abr. 2025" },
+    { src: "/images/certificado-socius.webp", alt: "Imagen certificado finalizacion bootcamp", institucion: "SOCIUS", curso: "Bootcamp - Principios de Desarrollo Web Full Stack", fecha: "Expedido: oct. 2024" },
     { src: "/images/certificado react uni.webp", alt: "Imagen certificado React", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Aplicaciones Frontend con React", fecha: "Expedido: jun. 2024" },
     { src: "/images/certificado java nivel ii uni.webp", alt: "Imagen certificado Java - Desarrollo de Aplicaciones de Escritorio ", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Java - Desarrollo de Aplicaciones de Escritorio", fecha: "Expedido: oct. 2022" },
     { src: "/images/certificado java nivel i uni.webp", alt: "Imagen certificado Java - Programación", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Java - Programación", fecha: "Expedido: sept. 2022" },

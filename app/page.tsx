@@ -888,6 +888,8 @@ function SeccionLogros() {
   const [index, setIndex] = useState(0); // Índice de la imagen seleccionada
 
   const images = [
+    { src: "/images/aplicacion_ux_ui_designer_figma.webp", alt: "Imagen certificado Aplicación de UX/UI Designer en Figma", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Aplicación de UX/UI designer en Figma", fecha: "Expedido: may. 2025" },
+    { src: "/images/certificado_ux_ui_idat.webp", alt: "Imagen certificado UX/UI", institucion: "IDAT", curso: "DISEÑO UX/UI", fecha: "Expedido: may. 2025" },
     { src: "/images/certificado_scrum.webp", alt: "Imagen certificado SCRUM", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "SCRUM - GESTIÓN DE PROYECTOS ", fecha: "Expedido: abr. 2025" },
     { src: "/images/certificado-socius.webp", alt: "Imagen certificado finalizacion bootcamp", institucion: "SOCIUS", curso: "Bootcamp - Principios de Desarrollo Web Full Stack", fecha: "Expedido: oct. 2024" },
     { src: "/images/certificado react uni.webp", alt: "Imagen certificado React", institucion: "UNIVERSIDAD NACIONAL DE INGENIERÍA", curso: "Aplicaciones Frontend con React", fecha: "Expedido: jun. 2024" },

@@ -436,7 +436,7 @@ function SeccionExperiencia() {
               </span>
             </h3>
             <time className="block mb-2 text-sm font-normal leading-none text-primary-950/80 dark:text-primary-200/90">
-              Enero 2022 - Presente
+              Enero 2020 - Octubre 2022
             </time>
             <p className="mb-4 font-normal text-dark-700 dark:text-dark-200 text-base text-pretty">
               En mi experiencia, me he enfocado en la creación y mantenimiento de sitios web utilizando tecnologías como HTML,
@@ -471,7 +471,7 @@ function SeccionExperiencia() {
               </span>
             </h3>
             <time className="block mb-2 text-sm font-normal leading-none text-primary-950/80 dark:text-primary-200/90">
-              Febrero 2020 - Noviembre 2021
+              Septiemnre 2017 - Marzo 2018
             </time>
             <p className="mb-4 font-normal text-dark-700 dark:text-dark-200 text-base text-pretty">
               Durante mi tiempo en la Oficina de Servicios Informáticos de la UNJFSC,
